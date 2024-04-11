@@ -3,49 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Formulario</title>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-
-            <h1>Formulario Para Cadastro</h1>
-
-            <div class="label-float">
-                <input type="text" id="Nome">
-                <label id="labelNome">Nome</label>
-
-                <input type="text" id="Sobrenome">
-                <label id="labelSobreNome">SobreNome</label>
-
-                <input type="text" id="Idade">
-                <label id="labelIdade">Idade</label>
-
-                <input type="tel" id="Telefone">
-                <label id="labelTelefone">Telefone</label>
-
-                <input type="email" id="Email">
-                <label id="labelEmail">E-Mail</label>
-
-                <input type="radio" id="Masculino">
-                <label for="Masculino">Masculino</label>
-
-                <input type="radio" id="Feminio">
-                <label for="Feminio">Feminio</label>
-
-                <input type="radio" id="Outro">
-                <label for="Outro">Outro</label>
-
-                <input type="text" id="Endereco">
-                <label id="labelEndereco">Endereço</label>
-
-            </div>
-
-            <div class="btn">
-                <button onclick="cadastra()">Cadastrar</button>
-            </div>
+        <div class="form-image">
+            <img src="assets/img/undraw_japan_ubgk.svg">
         </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Formulario para Cadastro</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <input type="text" id="name" placeholder="Nome" required>
+                    </div>    
+                    
+                    <div class="input-box">
+                        <input type="text" id="lastName" placeholder="Sobrenome" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <input type="text" id="birthday" placeholder="XX/XX/XXXX" required>      
+                    </div>
+        
+                    <div class="input-box">                       
+                        <input type="tel" id="cell" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>   
+
+                    <div class="input-box">                       
+                        <input type="email" id="email" placeholder="E-Mail" required> 
+                    </div>
+        
+                    <div class="input-box">                       
+                        <input type="password" id="password" placeholder="Senha" required> 
+                    </div>
+        
+                    <div class="input-box">
+                        <input type="password" id="confirmPassword" placeholder="Confirme sua senha" required> 
+                    </div>
+                    
+                </div>
+        
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gender</h6>
+                    </div>
+        
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+        
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminio</label>
+                        </div>
+        
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="gender">
+                            <label for="others">Outro</label>
+                        </div>
+        
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="gender">
+                            <label for="None">Prefiro Não Dizer</label>
+                        </div>
+                             
+                    </div>
+
+                    <div class="continue-button">
+                        <button><a href="#">Continuar</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        
+
+       
     </div>
 </body>
 </html>
