@@ -70,18 +70,14 @@ box-shadow: 5px 5px 10px rgb(0, 0 ,0, 1);
 
 .input-group{
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    margin-bottom: 1.1rem;
+    flex-direction:column;
+    justify-content: left;
+    margin-bottom: 2rem;
 }
 
-.input-box{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.1rem;
-}
 
 .input-box input{
+    width: 30%;
     margin: 0.6rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
@@ -104,9 +100,8 @@ box-shadow: 5px 5px 10px rgb(0, 0 ,0, 1);
 }
 
 .login-button button{
-    width: 50%;
-    margin-bottom: 3rem;
-    margin-left: 25%;
+    width: 30%;
+    margin-bottom: 2rem;
     border: none;
     background-color: #5C6F7E;
     padding: 0.62rem;
@@ -132,7 +127,7 @@ box-shadow: 5px 5px 10px rgb(0, 0 ,0, 1);
     margin-top: 1rem;
 }
 
-@media screen and (max-width: 1064px) {
+@media screen and (max-width: 1600px) and (min-width:1000px) {
     .container{
         width: 90%;
         height: auto;
@@ -147,18 +142,33 @@ box-shadow: 5px 5px 10px rgb(0, 0 ,0, 1);
         
     }
 
-    .gender-inputs{
-        margin-top: 2rem;
+
+}
+
+@media screen and (max-width: 1440px) and (min-width:900px) {
+    .container{
+        width: 90%;
+        height: auto;
     }
 
-    .gender-group{
+    .form-image img{
+        width: 28rem;
+    }
+
+    .img-header{
+        display: none;
+    }
+
+    .input-box{
+        width: 30rem;
+    }
+
+    .label{
         flex-direction: column;
+        margin-right: 450px;
     }
 
-    .gender-input{
-        margin-top: 0.5rem;
+    .label-cadastro{
+        padding-bottom: 1rem;
     }
-
-
-
 }
